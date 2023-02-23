@@ -19,6 +19,11 @@
   justify-content: center;
 }
 
+.navigation__list-item:hover {
+  background-color: var(--secondary-light);
+  transition: 0.3 ease-in;
+}
+
 .navigation__list-item--active {
   background-color: var(--secondary-light);
 }
