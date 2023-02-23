@@ -10,11 +10,10 @@ answerButton.addEventListener("click", toggleAnswer);
 
 function toggleAnswer() {
   const answer = document.querySelector(".card__answer");
-  answer.classList.toggle("hidden");
+  const button = document.querySelector(".card__button-answer");
 
-  if (answer.classList.contains("hidden")) {
-    answerButton.textContent = "Show Answer";
-  } else {
-    answerButton.textContent = "Hide Answer";
-  }
+  answer.classList.toggle("card__answer--active");
+  button.textContent = answer.classList.contains("hidden")
+    ? "Show Answer"
+    : "Hide Answer";
 }
