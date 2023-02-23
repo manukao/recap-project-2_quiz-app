@@ -1,3 +1,4 @@
+// Card Bookmark
 const bookmarkButton = document.querySelector(".bookmark");
 bookmarkButton.addEventListener("click", toggleBookmark);
 
@@ -5,6 +6,7 @@ function toggleBookmark() {
   bookmarkButton.classList.toggle("bookmark--active");
 }
 
+// Card Answer Toggle
 const answerButton = document.querySelector(".card__button-answer");
 answerButton.addEventListener("click", toggleAnswer);
 
@@ -17,3 +19,5 @@ function toggleAnswer() {
     ? "Hide Answer"
     : "Show Answer";
 }
+
+// Add Question
