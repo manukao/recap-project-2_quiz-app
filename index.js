@@ -3,7 +3,6 @@ bookmarkButton.addEventListener("click", toggleBookmark);
 
 function toggleBookmark() {
   bookmarkButton.classList.toggle("bookmark--active");
-  console.log("toggled");
 }
 
 const answerButton = document.querySelector(".card__button-answer");
