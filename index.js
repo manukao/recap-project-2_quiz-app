@@ -13,7 +13,7 @@ function toggleAnswer() {
   const button = document.querySelector(".card__button-answer");
 
   answer.classList.toggle("card__answer--active");
-  button.textContent = answer.classList.contains("hidden")
-    ? "Show Answer"
-    : "Hide Answer";
+  button.textContent = answer.classList.contains("card__answer--active")
+    ? "Hide Answer"
+    : "Show Answer";
 }
