@@ -1,0 +1,56 @@
+.form {
+  margin-top: 6rem; /* to push the form below the header */
+  margin-bottom: 5rem; /* to make room for the navigation footer */
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text);
+  background-color: var(--background-light);
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  resize: none;
+}
+
+.form__submit-button {
+  display: block;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  align-self: center;
+  border: solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.form__submit-button:hover {
+  background-color: var(--secondary-light);
+  transition: 0.1 ease-in;
+}
+
+.form__submit-button:active {
+  transform: translateY(2px);
+}

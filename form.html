@@ -17,7 +17,20 @@
       <h1 class="header__title">Add Question</h1>
     </header>
 
-    <main></main>
+    <main class="form__container">
+      <form class="form">
+        <label for="question" class="form__label">Your question:</label>
+        <textarea id="question" name="question" class="form__input"></textarea>
+
+        <label for="answer" class="form__label">Your answer:</label>
+        <textarea id="answer" name="answer" class="form__input"></textarea>
+
+        <label for="tag" class="form__label">Tag:</label>
+        <input type="text" id="tag" name="tag" class="form__input" />
+
+        <button type="submit" class="form__submit-button">Submit</button>
+      </form>
+    </main>
 
     <nav class="navigation">
       <ul class="navigation__list">
