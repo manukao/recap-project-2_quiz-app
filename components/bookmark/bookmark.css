@@ -5,14 +5,22 @@
   border-radius: 50%;
   background: var(--secondary);
   color: var(--white);
+  transition: 0.1s ease-in-out 0.1s;
 }
 
 .bookmark:hover {
   cursor: pointer;
+  color: var(--black);
 }
 
 .bookmark--active {
   color: var(--black);
+}
+
+.bookmark--active:hover {
+  background: var(--secondary);
+  color: var(--white);
+  transition: 0.1s ease-out 0.3s;
 }
 
 .bookmark__icon {
